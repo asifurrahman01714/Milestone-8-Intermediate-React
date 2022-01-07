@@ -1,12 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
+import { Button } from 'react-bootstrap';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <h1 className="text-danger">Learning React Bootstrap</h1>
-        <img src={logo} className="App-logo" alt="logo" />
+        <Button variant="primary">Primary</Button>
       </header>
     </div>
   );
