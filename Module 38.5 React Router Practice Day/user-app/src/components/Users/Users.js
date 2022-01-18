@@ -9,7 +9,7 @@ const Users = () => {
         .then(data => setUsers(data))
     },[])
     return (
-        <div>
+        <div className='mt-3'>
             {
                 users.map(user =><User user={user}/>)
             }
