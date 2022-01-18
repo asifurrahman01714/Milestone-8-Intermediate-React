@@ -7,6 +7,7 @@ import {
   Link
 } from "react-router-dom";
 import NoMatch from "./components/NoMatch/NoMatch";
+import UserDetails from "./components/UserDetails/UserDetails";
 
 function App() {
   return (
@@ -21,7 +22,10 @@ function App() {
         <Route path="/users">
           <Users></Users>
         </Route>
-        
+
+        <Route path="/userDetails">
+          <UserDetails></UserDetails>
+        </Route>
         <Route path="*">
             <NoMatch />
         </Route>
