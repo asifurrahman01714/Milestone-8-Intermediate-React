@@ -23,14 +23,14 @@ function App() {
           <Users></Users>
         </Route>
 
-        <Route path="/userDetails">
+        <Route path="/userDetails/:id">
           <UserDetails></UserDetails>
         </Route>
 
         <Route path="*">
             <NoMatch />
         </Route>
-        
+
       </Switch>
     </Router>
   );
