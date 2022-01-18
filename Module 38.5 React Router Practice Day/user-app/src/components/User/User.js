@@ -2,10 +2,17 @@ import React from 'react';
 
 const User = ({user}) => {
     const {name, email} = user;
+    const imageUrl = 'https://cn.i.cdn.ti-platform.com/cnapac/content/2017/showpage/ben-10/sa/showicon.png';
     return (
-        <div>
-            <h1>User Name: {name}</h1>
-            <h1>User Email: {email}</h1>
+        <div className='col-md-4 '>
+            <div className="card m-2" style={{width: '18rem'}}>
+                <img src={imageUrl} className="card-img-top p-2" alt="..."/>
+                <div className="card-body">
+                    <h5 className="card-title"><strong>Name:</strong>{name}</h5>
+                    <h5 className="card-title"><strong>Email:</strong> {email}</h5>
+                    <a href="#" className="btn btn-primary">See Details</a>
+                </div>
+            </div>
         </div>
     );
 };
