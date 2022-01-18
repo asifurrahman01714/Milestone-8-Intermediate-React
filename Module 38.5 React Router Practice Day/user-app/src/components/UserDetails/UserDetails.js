@@ -18,9 +18,9 @@ const UserDetails = () => {
     return (
         <div className="container">
             <div className="row justify-content-center">
-                <div className='col-md-6 '>
+                <div className='col-md-6 shadow'>
                     <div className="card m-2">
-                        <img src={imageUrl} className="card-img-top p-5 w-50 rounded mx-auto d-block img-thumbnail" alt="..."/>
+                        <img src={imageUrl} className="card-img-top p-5 w-50 mt-2 rounded mx-auto d-block img-thumbnail" alt="..."/>
                         <div className="card-body">
                             <h5 className="card-title"><strong>Name: </strong>{user?.name}</h5>
                             <h5 className="card-title"><strong>Phone: </strong>{user?.phone}</h5>
