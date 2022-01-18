@@ -22,10 +22,10 @@ const UserDetails = () => {
                     <div className="card m-2">
                         <img src={imageUrl} className="card-img-top p-5 w-50 rounded mx-auto d-block img-thumbnail" alt="..."/>
                         <div className="card-body">
-                            <h5 className="card-title"><strong>Name:</strong>{user?.name}</h5>
-                            <h5 className="card-title"><strong>Phone:</strong>{user?.phone}</h5>
-                            <h5 className="card-title"><strong>Website:</strong>{user?.website}</h5>
-                            <h6 className="card-title"><strong>Email:</strong> {user?.email}</h6>
+                            <h5 className="card-title"><strong>Name: </strong>{user?.name}</h5>
+                            <h5 className="card-title"><strong>Phone: </strong>{user?.phone}</h5>
+                            <h5 className="card-title"><strong>Website: </strong>{user?.website}</h5>
+                            <h6 className="card-title"><strong>Email: </strong> {user?.email}</h6>
                         </div>
                     </div>
                 </div>
