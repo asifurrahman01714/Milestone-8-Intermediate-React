@@ -6,6 +6,7 @@ import {
   Route,
   Link
 } from "react-router-dom";
+import NoMatch from "./components/NoMatch/NoMatch";
 
 function App() {
   return (
