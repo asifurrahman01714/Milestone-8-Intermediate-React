@@ -7,7 +7,10 @@ const Users = () => {
         fetch('https://jsonplaceholder.typicode.com/users')
         .then(response => response.json())
         .then(data => setUsers(data))
-    },[])
+    },[]);
+    const userDetails = (user)=>{
+        console.log('Clicked for details')
+    }
     return (
         <div className='mt-3 row'>
             {
