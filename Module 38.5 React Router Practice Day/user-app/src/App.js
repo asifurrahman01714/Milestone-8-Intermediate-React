@@ -1,13 +1,22 @@
 import Header from "./components/Header/Header";
 import Users from "./components/Users/Users";
-
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 
 function App() {
   return (
-    <div>
+    <Router>
       <Header></Header>
-      <Users></Users>
-    </div>
+      <Switch>
+        <Route path="/users">
+          <Users></Users>
+        </Route>
+      </Switch>
+    </Router>
   );
 }
 
