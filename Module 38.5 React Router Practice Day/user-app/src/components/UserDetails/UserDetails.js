@@ -16,7 +16,7 @@ const UserDetails = () => {
     // const {name, email} = user;
     const imageUrl = 'https://cn.i.cdn.ti-platform.com/cnapac/content/2017/showpage/ben-10/sa/showicon.png';
     return (
-        <div className="container">
+        <div className="container mt-4">
             <div className="row justify-content-center">
                 <div className='col-md-6 shadow'>
                     <div className="card m-2">
