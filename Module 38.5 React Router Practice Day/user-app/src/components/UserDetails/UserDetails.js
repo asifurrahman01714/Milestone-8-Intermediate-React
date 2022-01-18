@@ -10,7 +10,7 @@ const UserDetails = () => {
         .then(res => res.json())
         .then(data => setUsers(data))
     },[]);
-    const singleUser = users.find(user => user.id === parseInt(id));
+    const singleUser = users.find(user => user.id === parseInt(id)); //user was not showign at first. so you have to convert the string to integer
     console.log(singleUser);
     return (
         <div>
