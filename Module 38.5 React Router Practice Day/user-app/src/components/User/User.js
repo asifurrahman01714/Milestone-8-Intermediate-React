@@ -10,7 +10,7 @@ const User = ({user}) => {
                 <div className="card-body">
                     <h5 className="card-title"><strong>Name:</strong>{name}</h5>
                     <h5 className="card-title"><strong>Email:</strong> {email}</h5>
-                    <a href="#" className="btn btn-primary">See Details</a>
+                    <a href="#" className="btn btn-primary d-flex justify-content-center mt-4">See Details</a>
                 </div>
             </div>
         </div>
