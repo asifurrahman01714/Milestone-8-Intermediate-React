@@ -26,9 +26,11 @@ function App() {
         <Route path="/userDetails">
           <UserDetails></UserDetails>
         </Route>
+
         <Route path="*">
             <NoMatch />
         </Route>
+        
       </Switch>
     </Router>
   );
