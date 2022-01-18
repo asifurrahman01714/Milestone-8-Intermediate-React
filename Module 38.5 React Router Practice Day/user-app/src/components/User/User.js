@@ -1,6 +1,7 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-const User = ({user}) => {
+const User = ({user, userDetails}) => {
     const {name, email} = user;
     const imageUrl = 'https://cn.i.cdn.ti-platform.com/cnapac/content/2017/showpage/ben-10/sa/showicon.png';
     return (
@@ -10,7 +11,7 @@ const User = ({user}) => {
                 <div className="card-body">
                     <h5 className="card-title"><strong>Name:</strong>{name}</h5>
                     <h6 className="card-title"><strong>Email:</strong> {email}</h6>
-                    <a href="#" className="btn btn-primary d-flex justify-content-center mt-4">See Details</a>
+                    <Link className="btn btn-primary d-flex justify-content-center mt-4"  to="/user">See Details</Link>
                 </div>
             </div>
         </div>
