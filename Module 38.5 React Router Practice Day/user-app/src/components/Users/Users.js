@@ -1,4 +1,5 @@
 import React from 'react';
+import User from '../User/User';
 
 const Users = () => {
     const [users, setUsers] = React.useState([]);
@@ -9,7 +10,9 @@ const Users = () => {
     },[])
     return (
         <div>
-            <h1>Users: {users.length}</h1>
+            {
+                users.map(user =><User/>)
+            }
         </div>
     );
 };
