@@ -9,7 +9,7 @@ const User = ({user}) => {
                 <img src={imageUrl} className="card-img-top p-2" alt="..."/>
                 <div className="card-body">
                     <h5 className="card-title"><strong>Name:</strong>{name}</h5>
-                    <h5 className="card-title"><strong>Email:</strong> {email}</h5>
+                    <h6 className="card-title"><strong>Email:</strong> {email}</h6>
                     <a href="#" className="btn btn-primary d-flex justify-content-center mt-4">See Details</a>
                 </div>
             </div>
