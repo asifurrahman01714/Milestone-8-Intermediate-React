@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 
 const UserDetails = () => {
     const {id} = useParams();
-    const [users, setUsers] = React.userState([]);
+    const [users, setUsers] = React.useState([]);
     React.useEffect(() => {
         fetch('https://jsonplaceholder.typicode.com/users')
         .then(res => res.json())
