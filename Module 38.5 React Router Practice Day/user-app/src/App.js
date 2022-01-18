@@ -19,6 +19,10 @@ function App() {
         <Route exact path="/">
           <Users />
         </Route>
+
+        <Route path="*">
+            <NoMatch />
+        </Route>
       </Switch>
     </Router>
   );
