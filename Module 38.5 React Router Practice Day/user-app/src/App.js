@@ -16,7 +16,7 @@ function App() {
       <Switch>
         
         <Route exact path="/">
-          <Users /> // Self closing tag
+          <Users /> 
         </Route>
 
         <Route path="/users">
