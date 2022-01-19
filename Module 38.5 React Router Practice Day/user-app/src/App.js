@@ -19,11 +19,11 @@ function App() {
           <Users /> 
         </Route>
 
-        <Route path="/AsifUrRahman/userdetails//users">
+        <Route path="/AsifUrRahman/userdetails/users">
           <Users/>
         </Route>
 
-        <Route path="/AsifUrRahman/userdetails//userDetails/:id">
+        <Route path="/AsifUrRahman/userdetails/userDetails/:id">
           <UserDetails/>
         </Route>
 
