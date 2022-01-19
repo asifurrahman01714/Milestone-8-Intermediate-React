@@ -15,19 +15,19 @@ function App() {
       <Header/>
       <Switch>
         
-        <Route exact path="/https://omnigo.com.bd/AsifUrRahman/userdetails/">
+        <Route exact path="/AsifUrRahman/userdetails/">
           <Users /> 
         </Route>
 
-        <Route path="/https://omnigo.com.bd/AsifUrRahman/userdetails//users">
+        <Route path="/AsifUrRahman/userdetails//users">
           <Users/>
         </Route>
 
-        <Route path="/https://omnigo.com.bd/AsifUrRahman/userdetails//userDetails/:id">
+        <Route path="/AsifUrRahman/userdetails//userDetails/:id">
           <UserDetails/>
         </Route>
 
-        <Route path="/https://omnigo.com.bd/AsifUrRahman/userdetails/*">
+        <Route path="/AsifUrRahman/userdetails/*">
             <NoMatch />
         </Route>
 
