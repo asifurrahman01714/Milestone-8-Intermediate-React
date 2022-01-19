@@ -3,10 +3,11 @@ import React from 'react';
 const Countries = () => {
     const [countries, setCountries] = React.useState([]);
     React.useEffect(() => {
-        fetch('https://restcountries.eu/rest/v2/all')
+        fetch('https://restcountries.com/v3.1/all')
             .then(res => res.json())
             .then(data => {
                 setCountries(data);
+                console.log(data);
             });
     },[])
     return (
