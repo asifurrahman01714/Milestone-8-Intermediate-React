@@ -23,12 +23,12 @@ const CountryDetails = () => {
         <div className="container">
             <div className="row justify-content-center mt-3">
                 <div className="col-6">
-                    <div class="card">
+                    <div class="card shadow">
                     <img src={image} class="card-img-top" alt="..."/>
                     <div class="card-body">
                         <h5 class="card-title">Name: {name}</h5>
                         <h5 class="card-title">area: {area}</h5>
-                        <h5 class="card-title">Name: {population}</h5>
+                        <h5 class="card-title">Population: {population}</h5>
                         <h5 class="card-title text-success">Name: {status}</h5>
                     </div>
                 </div>
