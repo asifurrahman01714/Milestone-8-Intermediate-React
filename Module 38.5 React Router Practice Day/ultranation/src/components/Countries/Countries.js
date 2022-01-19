@@ -15,7 +15,7 @@ const Countries = () => {
         <div className="container">
             <div className="row">
                 {
-                    countries.map(country => <Country key={country.area} country={country}></Country>)
+                    countries.map(country => <Country key={country.name?.common} country={country}></Country>)
                 }
             </div>
         </div>

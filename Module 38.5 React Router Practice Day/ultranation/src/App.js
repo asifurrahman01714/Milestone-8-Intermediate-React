@@ -5,6 +5,7 @@ import {
   Link
 } from "react-router-dom";
 import Countries from "./components/Countries/Countries";
+import CountryDetails from "./components/CountryDetails/CountryDetails";
 import Home from "./components/Home/Home";
 function App() {
   return (
@@ -15,6 +16,9 @@ function App() {
         </Route>
         <Route exact path="/">
           <Home/>
+        </Route>
+        <Route path="/country/:name">
+          <CountryDetails/>
         </Route>
       </Switch>
     </Router>
