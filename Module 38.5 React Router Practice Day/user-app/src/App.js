@@ -12,22 +12,22 @@ import UserDetails from "./components/UserDetails/UserDetails";
 function App() {
   return (
     <Router>
-      <Header/>
+      <Header></Header>
       <Switch>
         
-        <Route exact path="/AsifUrRahman/userdetails/">
-          <Users /> 
+        <Route exact path="/">
+          <Users />
         </Route>
 
-        <Route path="/AsifUrRahman/userdetails/users">
-          <Users/>
+        <Route path="/users">
+          <Users></Users>
         </Route>
 
-        <Route path="/AsifUrRahman/userdetails/userDetails/:id">
-          <UserDetails/>
+        <Route path="/userDetails/:id">
+          <UserDetails></UserDetails>
         </Route>
 
-        <Route path="/AsifUrRahman/userdetails/*">
+        <Route path="*">
             <NoMatch />
         </Route>
 
