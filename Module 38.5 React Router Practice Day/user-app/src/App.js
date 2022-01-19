@@ -12,19 +12,19 @@ import UserDetails from "./components/UserDetails/UserDetails";
 function App() {
   return (
     <Router>
-      <Header></Header>
+      <Header/>
       <Switch>
         
         <Route exact path="/">
-          <Users />
+          <Users /> // Self closing tag
         </Route>
 
         <Route path="/users">
-          <Users></Users>
+          <Users/>
         </Route>
 
         <Route path="/userDetails/:id">
-          <UserDetails></UserDetails>
+          <UserDetails/>
         </Route>
 
         <Route path="*">
