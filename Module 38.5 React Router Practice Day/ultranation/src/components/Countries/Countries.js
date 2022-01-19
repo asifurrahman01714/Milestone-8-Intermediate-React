@@ -1,4 +1,5 @@
 import React from 'react';
+import Country from '../Country/Country';
 
 const Countries = () => {
     const [countries, setCountries] = React.useState([]);
@@ -11,8 +12,12 @@ const Countries = () => {
             });
     },[])
     return (
-        <div>
-            <h1>Countries. {countries.length}</h1>
+        <div className="container">
+            <div className="row">
+                {
+                    countries.map(country => <Country key={country.area} country={country}></Country>)
+                }
+            </div>
         </div>
     );
 };
