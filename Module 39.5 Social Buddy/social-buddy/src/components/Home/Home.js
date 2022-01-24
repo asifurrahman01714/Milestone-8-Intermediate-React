@@ -18,8 +18,21 @@ const Home = () => {
             <div className='container'>
                 <div className="row">
                     {
-                        posts.map(post => <Post key={post.id} post={post}/>)
+                        spinner === true ? 
+                        <div className="row justify-content-center mt-5">
+                            <div class="spinner-border text-danger" role="status">
+                                <span class="visually-hidden"></span>
+                            </div>
+                        </div>
+                        :
+
+                        <div>
+                            {
+                            posts.map(post => <Post key={post.id} post={post}/>)
+                            }
+                        </div>
                     }
+                    
                 </div>
             </div>
         </div>
