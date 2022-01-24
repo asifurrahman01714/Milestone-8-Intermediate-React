@@ -1,6 +1,6 @@
 import React from 'react';
 
-const comment = () => {
+const Comment = () => {
     return (
         <div className='col-md-4'>
             <div className="card mt-4 shadow" style={{height:'250px'}}>
@@ -13,4 +13,4 @@ const comment = () => {
     );
 };
 
-export default comment;
+export default Comment;

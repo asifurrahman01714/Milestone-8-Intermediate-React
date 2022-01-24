@@ -1,5 +1,6 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
+import Comment from '../Comment/Comment';
 
 const Comments = () => {
     const {postId} = useParams();
@@ -14,7 +15,9 @@ const Comments = () => {
     return (
         <div className="container">
             <div className="row">
-                <h1>Comments of {postId} is {filteredComments.length}</h1>
+                {
+                    filteredComments.map(comment => <Comment key={comment.id} comment={comment}/>)
+                }
             </div>
         </div>
     );
