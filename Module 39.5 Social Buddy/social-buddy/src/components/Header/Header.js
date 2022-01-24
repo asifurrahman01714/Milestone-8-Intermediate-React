@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
+import { SearchContext } from '../../App';
 
 const Header = () => {
+    const [search, setSearch] = useContext(SearchContext);
     const handleSearch =(event) => {
         console.log(event.target.value);
+        setSearch(event.target.value);
     }
     return (
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
