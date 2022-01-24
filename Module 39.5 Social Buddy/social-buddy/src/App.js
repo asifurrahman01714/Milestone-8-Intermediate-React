@@ -8,6 +8,7 @@ import {
 } from "react-router-dom";
 import Comments from './components/Comments/Comments';
 import Header from './components/Header/Header';
+import AllComments from './components/AllComments/AllComments';
 function App() {
   return (
     <Router>
@@ -21,6 +22,9 @@ function App() {
         </Route>
         <Route path="/comments/:postId">
           <Comments />
+        </Route>
+        <Route path="/allComments">
+          <AllComments />
         </Route>
       </Switch>
     </Router>
