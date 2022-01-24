@@ -12,8 +12,10 @@ const Comments = () => {
     }, []);
     const filteredComments = comments.filter(comment => comment.postId === parseInt(postId));
     return (
-        <div>
-            <h1>Comments of {postId} is {filteredComments.length}</h1>
+        <div className="container">
+            <div className="row">
+                <h1>Comments of {postId} is {filteredComments.length}</h1>
+            </div>
         </div>
     );
 };
