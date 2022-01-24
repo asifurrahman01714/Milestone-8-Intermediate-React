@@ -1,7 +1,14 @@
-.card-body{
+.card{
     position: relative;
 }
-.card-text{
+.cardTextBtn{
     position: absolute;
     top: 105px;
+}
+.card Button{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50px, -10px)
 }

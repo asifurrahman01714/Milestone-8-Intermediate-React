@@ -1,3 +1,4 @@
+import { Button } from '@mui/material';
 import React from 'react';
 import './post.css';
 const Post = (props) => {
@@ -8,7 +9,7 @@ const Post = (props) => {
                 <div className="card-body">
                     <h5 className="card-title fw-bold">{title}</h5>
                     <p className="card-text" >{body}</p>
-                    
+                    <Button variant="contained">Contained</Button>
                 </div>
             </div>
         </div>
