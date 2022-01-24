@@ -8,6 +8,7 @@ const Post = (props) => {
                 <div className="card-body">
                     <h5 className="card-title fw-bold">{title}</h5>
                     <p className="card-text" >{body}</p>
+                    
                 </div>
             </div>
         </div>
