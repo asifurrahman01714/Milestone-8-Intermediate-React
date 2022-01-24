@@ -13,10 +13,12 @@ const Home = () => {
     return (
         <div>
             <Header/>
-            <div>
-                {
-                    posts.map(post => <Post />)
-                }
+            <div className='container'>
+                <div className="row">
+                    {
+                        posts.map(post => <Post />)
+                    }
+                </div>
             </div>
         </div>
     );
