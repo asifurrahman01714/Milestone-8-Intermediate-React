@@ -5,6 +5,7 @@ import Comment from '../Comment/Comment';
 const Comments = () => {
     const {postId} = useParams();
     const [comments, setComments] = React.useState([]);
+    /*
     React.useEffect(()=>{
         const url = `https://jsonplaceholder.typicode.com/comments`;
         fetch(url)
@@ -12,6 +13,8 @@ const Comments = () => {
         .then(data => setComments(data));
     }, []);
     const filteredComments = comments.filter(comment => comment.postId === parseInt(postId));
+    */
+   
     return (
         <div className="container">
             <div className="row">
