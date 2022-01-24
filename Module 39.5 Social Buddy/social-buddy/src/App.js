@@ -6,6 +6,7 @@ import {
   Route,
   Link
 } from "react-router-dom";
+import Comments from './components/Comments/Comments';
 function App() {
   return (
     <Router>
@@ -15,6 +16,9 @@ function App() {
         </Route>
         <Route path="/home">
           <Home />
+        </Route>
+        <Route path="/comments/:postId">
+          <Comments />
         </Route>
       </Switch>
     </Router>
