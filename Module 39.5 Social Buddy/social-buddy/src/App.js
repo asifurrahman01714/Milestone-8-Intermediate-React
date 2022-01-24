@@ -7,9 +7,11 @@ import {
   Link
 } from "react-router-dom";
 import Comments from './components/Comments/Comments';
+import Header from './components/Header/Header';
 function App() {
   return (
     <Router>
+      <Header/>
       <Switch>
         <Route exact path="/">
           <Home />

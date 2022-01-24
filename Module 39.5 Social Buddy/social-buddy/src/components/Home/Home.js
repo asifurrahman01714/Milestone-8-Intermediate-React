@@ -1,5 +1,4 @@
 import React from 'react';
-import Header from '../Header/Header';
 import Post from '../Post/Post';
 
 const Home = () => {
@@ -12,7 +11,6 @@ const Home = () => {
     }, []);
     return (
         <div>
-            <Header/>
             <div className='container'>
                 <div className="row">
                     {

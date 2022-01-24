@@ -14,7 +14,7 @@ const Post = (props) => {
                 <div className="card-body text-center">
                     <h5 className="card-title fw-bold">{title}</h5>
                     <p className="card-text" >{body}</p>
-                    <Button variant="contained" onClick={handleClick}>Contained</Button>
+                    <Button variant="contained" onClick={handleClick}>Comments</Button>
                 </div>
             </div>
         </div>
