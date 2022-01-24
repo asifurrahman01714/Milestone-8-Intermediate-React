@@ -9,6 +9,9 @@ import {
 import Comments from './components/Comments/Comments';
 import Header from './components/Header/Header';
 import AllComments from './components/AllComments/AllComments';
+import { createContext } from 'react';
+
+export const SearchContext = createContext();
 function App() {
   return (
     <Router>
