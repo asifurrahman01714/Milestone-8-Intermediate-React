@@ -1,6 +1,7 @@
 import React from 'react';
 
-const Post = () => {
+const Post = (props) => {
+    const {name, body} = props.post;
     return (
         <div className='col-md-4'>
             <div class="card mt-4 shadow" >
