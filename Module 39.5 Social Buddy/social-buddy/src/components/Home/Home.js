@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from '../Header/Header';
+import Post from '../Post/Post';
 
 const Home = () => {
     const [posts, setPosts] = React.useState([]);
@@ -13,7 +14,9 @@ const Home = () => {
         <div>
             <Header/>
             <div>
-                
+                {
+                    posts.map(post => <Post />)
+                }
             </div>
         </div>
     );
