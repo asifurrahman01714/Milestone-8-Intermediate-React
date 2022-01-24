@@ -5,6 +5,12 @@ import Comment from '../Comment/Comment';
 const Comments = () => {
     const {postId} = useParams();
     const [comments, setComments] = React.useState([]);
+    React.useEffect(()=>{
+        const url = `https://jsonplaceholder.typicode.com/comments?postId=${postId}`;
+        fetch(url)
+        .then(response => response.json())
+        .then(data => setComments(data));
+    },[])
     /*
     React.useEffect(()=>{
         const url = `https://jsonplaceholder.typicode.com/comments`;
@@ -14,12 +20,12 @@ const Comments = () => {
     }, []);
     const filteredComments = comments.filter(comment => comment.postId === parseInt(postId));
     */
-   
+
     return (
         <div className="container">
             <div className="row">
                 {
-                    filteredComments.map(comment => <Comment key={comment.id} comment={comment}/>)
+                    comments.map(comment => <Comment key={comment.id} comment={comment}/>)
                 }
             </div>
         </div>
