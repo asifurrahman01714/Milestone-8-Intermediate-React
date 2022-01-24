@@ -1,0 +1,7 @@
+.card-body{
+    position: relative;
+}
+.card-text{
+    position: absolute;
+    top: 105px;
+}
