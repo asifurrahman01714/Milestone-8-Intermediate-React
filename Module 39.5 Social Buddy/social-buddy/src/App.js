@@ -9,28 +9,31 @@ import {
 import Comments from './components/Comments/Comments';
 import Header from './components/Header/Header';
 import AllComments from './components/AllComments/AllComments';
-import { createContext } from 'react';
+import { createContext, useState } from 'react';
 
 export const SearchContext = createContext();
 function App() {
+  const [search, setSearch] = useState('');
   return (
-    <Router>
-      <Header/>
-      <Switch>
-        <Route exact path="/">
-          <Home />
-        </Route>
-        <Route path="/home">
-          <Home />
-        </Route>
-        <Route path="/comments/:postId">
-          <Comments />
-        </Route>
-        <Route path="/allComments">
-          <AllComments />
-        </Route>
-      </Switch>
-    </Router>
+    <SearchContext.Provider value={[search,setSearch]}>
+      <Router>
+        <Header/>
+        <Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
+          <Route path="/home">
+            <Home />
+          </Route>
+          <Route path="/comments/:postId">
+            <Comments />
+          </Route>
+          <Route path="/allComments">
+            <AllComments />
+          </Route>
+        </Switch>
+      </Router>
+    </SearchContext.Provider>
   );
 }
 
