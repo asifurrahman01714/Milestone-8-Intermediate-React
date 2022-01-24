@@ -16,7 +16,6 @@ const Home = () => {
     return (
         <div>
             <div className='container'>
-                <div className="row">
                     {
                         spinner === true ? 
                         <div className="row justify-content-center mt-5">
@@ -26,14 +25,13 @@ const Home = () => {
                         </div>
                         :
 
-                        <div>
+                        <div className="row">
                             {
                             posts.map(post => <Post key={post.id} post={post}/>)
                             }
                         </div>
                     }
                     
-                </div>
             </div>
         </div>
     );
