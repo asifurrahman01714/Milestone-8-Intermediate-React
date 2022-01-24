@@ -6,7 +6,7 @@ import { Button, CardActionArea, CardActions } from '@mui/material';
 const Comment = ({comment}) => {
     const {name, email, body} = comment;
     return (
-        <div className='col-md-4 mt-2'>
+        <div className='col-md-4 mt-2' style={{position: 'relative'}}>
             <Card sx={{ maxWidth: 345, height:265 }}>
                 <CardActionArea>
                     <CardContent>
@@ -20,7 +20,7 @@ const Comment = ({comment}) => {
                     </CardContent>
                 </CardActionArea>
                 <CardActions>
-                    <Button variant="contained" size="small" color="primary">
+                    <Button style={{position: 'absolute',bottom: '10px'}} variant="contained" size="small" color="primary">
                         Share
                     </Button>
                 </CardActions>
