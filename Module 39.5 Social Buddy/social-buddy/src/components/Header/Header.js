@@ -23,7 +23,7 @@ const Header = () => {
                         </li>
                     </ul>
                     <form class="d-flex">
-                        <input class="form-control me-2" type="search" placeholder="Search by post Id" onChanger={handleSearch} aria-label="Search"/>
+                        <input class="form-control me-2" type="search" placeholder="Search by post Id" onChange={handleSearch} aria-label="Search"/>
                         <button class="btn btn-outline-success" type="submit">Search</button>
                     </form>
                     </div>
