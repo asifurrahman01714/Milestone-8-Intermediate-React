@@ -3,7 +3,6 @@ import React from 'react';
 import './post.css';
 const Post = (props) => {
     const {title, body} = props.post;
-    const history = useHistory();
     return (
         <div className='col-md-4'>
             <div className="card mt-4 shadow" style={{height:'250px'}}>
