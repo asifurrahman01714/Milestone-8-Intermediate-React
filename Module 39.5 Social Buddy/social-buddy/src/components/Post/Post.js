@@ -3,10 +3,10 @@ import React from 'react';
 import { useHistory } from 'react-router-dom';
 import './post.css';
 const Post = (props) => {
-    const {title, body} = props.post;
+    const {title, body, id} = props.post;
     const history = useHistory();
     const handleClick = () => {
-        history.push(`/post/${props.post.id}`);
+        history.push(`/comments/${id}`);
     }
     return (
         <div className='col-md-4'>
