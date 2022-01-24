@@ -16,7 +16,7 @@ const Home = () => {
             <div className='container'>
                 <div className="row">
                     {
-                        posts.map(post => <Post />)
+                        posts.map(post => <Post key={post.id} post={post}/>)
                     }
                 </div>
             </div>
