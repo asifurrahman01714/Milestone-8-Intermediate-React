@@ -8,7 +8,10 @@ const Home = () => {
         const url = 'https://jsonplaceholder.typicode.com/posts';
         fetch(url)
         .then(response => response.json())
-        .then(data => setPosts(data));
+        .then(data => {
+            setPosts(data);
+            setSpinner(false);
+        });
     }, []);
     return (
         <div>
