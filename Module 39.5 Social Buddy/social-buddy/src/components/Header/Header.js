@@ -5,7 +5,7 @@ import { SearchContext } from '../../App';
 const Header = () => {
     const [search, setSearch] = useContext(SearchContext);
     const handleSearch =(event) => {
-        console.log(event.target.value);
+        // console.log(event.target.value);
         setSearch(event.target.value);
     }
     return (
