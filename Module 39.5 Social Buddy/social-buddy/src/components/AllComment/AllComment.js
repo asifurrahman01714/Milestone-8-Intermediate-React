@@ -1,5 +1,4 @@
 import React from 'react';
-
 const AllComment = ({comment}) => {
     const {name, email, body} = comment;
     return (
