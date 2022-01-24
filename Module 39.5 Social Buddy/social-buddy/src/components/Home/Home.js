@@ -3,6 +3,7 @@ import Post from '../Post/Post';
 
 const Home = () => {
     const [posts, setPosts] = React.useState([]);
+    const [spinner ,setSpinner] = React.useState(true);
     React.useEffect(()=>{
         const url = 'https://jsonplaceholder.typicode.com/posts';
         fetch(url)
