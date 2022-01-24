@@ -16,7 +16,7 @@ const Header = () => {
                         </li>
                         
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">All Comments</a>
+                            <Link class="nav-link active" aria-current="page" to="/allComments">All Comments</Link>
                         </li>
                     </ul>
                     <form class="d-flex">
