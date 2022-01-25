@@ -23,7 +23,7 @@ const LeagueDetails = () => {
         
             <div>
                 {
-                                    spinner === true ? 
+                        spinner === true ? 
                                     <div className="row justify-content-center mt-5">
                                         <div class="spinner-border text-danger" role="status">
                                             <span class="visually-hidden"></span>
