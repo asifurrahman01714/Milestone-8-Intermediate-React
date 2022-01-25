@@ -41,7 +41,7 @@ const LeagueDetails = () => {
                                                         <h5><FontAwesomeIcon icon={faBullseye} /> Founded : {leagueDetails?.intFormedYear}</h5>
                                                         <h5><FontAwesomeIcon icon={faFlag} /> Country : {leagueDetails?.strCountry}</h5>
                                                         {
-                                                            leagueDetails?.strGender === 'female'?
+                                                            leagueDetails?.strGender === "Female"?
                                                             <h5><FontAwesomeIcon icon={faFemale} /> Gender : {leagueDetails?.strGender}</h5>
                                                             :
                                                             <h5><FontAwesomeIcon icon={faMale} /> Gender : {leagueDetails?.strGender}</h5>
@@ -51,7 +51,7 @@ const LeagueDetails = () => {
                                                 
                                                 <div class="col-md-4">
                                                     {
-                                                        leagueDetails?.strGender === 'female' ?
+                                                        leagueDetails?.strGender === 'Female' ?
                                                             <img src={femaleImg} class="img-fluid" alt="..."/>
                                                             :
                                                             <img src={maleImg} class="img-fluid " alt="..."/>
