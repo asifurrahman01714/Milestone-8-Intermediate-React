@@ -29,7 +29,6 @@ const Home = () => {
                         :
 
                         <div className="row">
-                            // Hence completed the react search bar.
                             {
                                 posts.filter((post)=>{
                                     if(search === ""){
