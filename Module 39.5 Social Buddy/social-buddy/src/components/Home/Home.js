@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { SearchContext } from '../../App';
 import Post from '../Post/Post';
 
 const Home = () => {
     const [posts, setPosts] = React.useState([]);
     const [spinner ,setSpinner] = React.useState(true);
+    const [search, setSearch] = useContext(SearchContext);
+
     React.useEffect(()=>{
         const url = 'https://jsonplaceholder.typicode.com/posts';
         fetch(url)
