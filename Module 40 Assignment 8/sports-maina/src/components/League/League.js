@@ -1,10 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const League = () => {
+const League = ({league}) => {
+    const {idLeague,strLeague,strCountry,strFanart1} = league;
     return (
         <div className="col-md-4">
-            <div class="card">
+            <div class="card mt-3">
                 <img src="..." class="card-img-top" alt="..."/>
                 <div class="card-body">
                     <h5 class="card-title">Card title</h5>
