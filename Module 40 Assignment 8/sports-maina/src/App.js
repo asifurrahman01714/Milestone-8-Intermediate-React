@@ -7,7 +7,7 @@ function App() {
         <input placeholder="Enter Post Title"/>
         {
           Data.map((post) => (
-            <div key={post.id}>
+            <div className="box" key={post.id}>
               <p>{post.title}</p>
               <p>{post.author}</p>
             </div>
