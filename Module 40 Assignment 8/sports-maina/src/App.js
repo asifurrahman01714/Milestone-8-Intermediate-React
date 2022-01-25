@@ -9,15 +9,16 @@ function App() {
     <div className="App">
       <div>
       <input placeholder="Enter Post Title" onChange={event => setQuery(event.target.value)} />
+      <h1>Written terms: {query}</h1>
         {
-          Data.map((post, index) => {
-            <div className="box" key={index}>
+          Data.map((post) => (
+            <div className="box" key={post.id}>
               <p>{post.title}</p>
               <p>{post.author}</p>
             </div>
-          })
+          ))
         }
-    </div>
+      </div>
     </div>
   );
 }
