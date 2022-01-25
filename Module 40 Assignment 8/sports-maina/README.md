@@ -6,3 +6,8 @@
 4. https://www.npmjs.com/package/react-search-bar
 
 ```
+
+### Sports API
+```
+https://thesportsdb.com/api.php
+```
