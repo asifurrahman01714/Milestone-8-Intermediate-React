@@ -11,3 +11,7 @@
 ```
 https://thesportsdb.com/api.php
 ```
+### All leagues
+```
+https://www.thesportsdb.com/api/v1/json/2/all_leagues.php
+```
