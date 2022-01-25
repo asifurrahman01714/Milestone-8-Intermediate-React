@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 import femaleImg from '../../Images/female.png';
 import maleImg from '../../Images/male.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCoffee, faBullseye, faFlag, faMale, faFemale } from '@fortawesome/free-solid-svg-icons';
+import { faAnchor, faBullseye, faFlag, faMale, faFemale } from '@fortawesome/free-solid-svg-icons';
 const LeagueDetails = () => {
     const {idLeague} = useParams();
     const [leagues, setLeagues] = React.useState();
@@ -37,7 +37,7 @@ const LeagueDetails = () => {
                                             <div class="row g-0">
                                                 <div class="col-md-8">
                                                     <div class="card-body">
-                                                        <h5 class="card-title"><FontAwesomeIcon icon={faCoffee} /> Name : {leagueDetails?.strLeague}</h5>
+                                                        <h5 class="card-title"><FontAwesomeIcon icon={faAnchor} /> Name : {leagueDetails?.strLeague}</h5>
                                                         <h5><FontAwesomeIcon icon={faBullseye} /> Founded : {leagueDetails?.intFormedYear}</h5>
                                                         <h5><FontAwesomeIcon icon={faFlag} /> Country : {leagueDetails?.strCountry}</h5>
                                                         {
