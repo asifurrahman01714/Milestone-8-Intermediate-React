@@ -5,7 +5,7 @@ import League from '../League/League';
 
 const Leagues = () => {
     const [leagues, setLeagues] = React.useState([]);
-    const [search, setSearch] = useContext(SearchContext);
+    const [search] = useContext(SearchContext);
     const [spinner ,setSpinner] = React.useState(true);
     React.useEffect(()=>{
         const url =`https://www.thesportsdb.com/api/v1/json/2/search_all_leagues.php?c=England`;
