@@ -8,11 +8,11 @@ import {
 import Home from "./components/Home/Home";
 import Header from "./components/Header/Header";
 import LeagueDetails from "./components/LeagueDetails/LeagueDetails";
-import { createContext, useState } from "react/cjs/react.development";
+import { createContext, useState } from 'react';
 
 export const SearchContext = createContext();
 function App() {
-  const [search, setSearch] = useState();
+  const [search, setSearch] = useState(''); // Please give emnpty string as the initial value.Other wise it will not work properly
   return (
     <SearchContext.Provider value={[search, setSearch]}>
       <Router className="App">
