@@ -4,10 +4,10 @@ import { SearchContext } from '../../App';
 
 const Header = () => {
     const [search, setSearch] = useContext(SearchContext);
-    const handleSearch =(event) => {
-        // console.log(event.target.value);
-        setSearch(event.target.value);
-    }
+    // const handleSearch =(event) => {
+    //     // console.log(event.target.value);
+    //     setSearch(event.target.value);
+    // }
     return (
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container-fluid">
@@ -26,7 +26,7 @@ const Header = () => {
                         </li>
                     </ul>
                     <form class="d-flex">
-                        <input class="form-control me-2" type="search" placeholder="Search by post Id" onChange={handleSearch} aria-label="Search"/>
+                        <input class="form-control me-2" type="search" placeholder="Search by post Id" onChange={event => setSearch(event.target.value)} aria-label="Search"/>
                         <button class="btn btn-outline-success" type="submit">Search</button>
                     </form>
                     </div>
