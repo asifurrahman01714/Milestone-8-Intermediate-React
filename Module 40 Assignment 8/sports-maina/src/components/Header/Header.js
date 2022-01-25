@@ -1,7 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useContext } from 'react/cjs/react.development';
+import { SearchContext } from '../../App';
 
 const Header = () => {
+    const [search, setSearch] = useContext(SearchContext);
     return (
         <div>
             <div style={{height: '150px',alignItems: 'center',justifyContent: 'center',display: 'flex'}}>
