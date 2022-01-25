@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const League = ({league}) => {
-    const {idLeague,strLeague,strCountry,strFanart1,strFanart2,strDescriptionEN,strBanner,strLogo,strBadge} = league;
+    const {idLeague,strLeague,strFanart1,strFanart2,strDescriptionEN,strBanner,strLogo,strBadge} = league;
     return (
         <div className="col-md-4">
             <div class="card mt-3">
