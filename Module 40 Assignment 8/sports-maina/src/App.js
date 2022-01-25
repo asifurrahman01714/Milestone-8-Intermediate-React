@@ -4,17 +4,17 @@ import Data from './FakeData/FakeData.json';
 
 
 function App() {
-  const [query, setQuery] = useState("")
+  const [search, setSearch] = useState("")
   return (
     <div className="App">
       <div>
-      <input placeholder="Enter Post Title" onChange={event => setQuery(event.target.value)} />
-      <h1>Written terms: {query}</h1>
+      <input placeholder="Enter Post Title" onChange={event => setSearch(event.target.value)} />
+      <h1>Written terms: {search}</h1>
       {
         Data.filter(post => {
-          if (query === '') {
+          if (search === '') {
             return post;
-          } else if (post.title.toLowerCase().includes(query.toLowerCase())) {
+          } else if (post.title.toLowerCase().includes(search.toLowerCase())) {
             return post;
           }
         }).map((post, index) => (
