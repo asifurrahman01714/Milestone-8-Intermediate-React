@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 import femaleImg from '../../Images/female.png';
 import maleImg from '../../Images/male.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCoffee } from '@fortawesome/free-solid-svg-icons';
+import { faCoffee, faBullseye, faFlag, faMale, faFemale } from '@fortawesome/free-solid-svg-icons';
 const LeagueDetails = () => {
     const {idLeague} = useParams();
     const [leagues, setLeagues] = React.useState();
@@ -38,9 +38,14 @@ const LeagueDetails = () => {
                                                 <div class="col-md-8">
                                                     <div class="card-body">
                                                         <h5 class="card-title"><FontAwesomeIcon icon={faCoffee} /> Name : {leagueDetails?.strLeague}</h5>
-                                                        <h5>Founded : {leagueDetails?.intFormedYear}</h5>
-                                                        <h5>Country : {leagueDetails?.strCountry}</h5>
-                                                        <h5>Gender : {leagueDetails?.strGender}</h5>
+                                                        <h5><FontAwesomeIcon icon={faBullseye} /> Founded : {leagueDetails?.intFormedYear}</h5>
+                                                        <h5><FontAwesomeIcon icon={faFlag} /> Country : {leagueDetails?.strCountry}</h5>
+                                                        {
+                                                            leagueDetails?.strGender === 'female'?
+                                                            <h5><FontAwesomeIcon icon={faFemale} /> Gender : {leagueDetails?.strGender}</h5>
+                                                            :
+                                                            <h5><FontAwesomeIcon icon={faMale} /> Gender : {leagueDetails?.strGender}</h5>
+                                                        }
                                                     </div>
                                                 </div>
                                                 
