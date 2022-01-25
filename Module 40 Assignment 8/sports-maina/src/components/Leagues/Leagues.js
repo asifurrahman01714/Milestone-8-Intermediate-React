@@ -39,7 +39,7 @@ const Leagues = () => {
                                 }).map(league => <League key={league.idLeague} league={league}/>)
                             }
                         </div>
-                    }
+            }
 
 
         </div>
