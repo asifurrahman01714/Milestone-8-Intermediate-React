@@ -37,7 +37,7 @@ const LeagueDetails = () => {
                                             <div class="row g-0">
                                                 <div class="col-md-8">
                                                     <div class="card-body">
-                                                        <h5 class="card-title">Name : {leagueDetails?.strLeague}</h5>
+                                                        <h5 class="card-title"><FontAwesomeIcon icon={faCoffee} /> Name : {leagueDetails?.strLeague}</h5>
                                                         <h5>Founded : {leagueDetails?.intFormedYear}</h5>
                                                         <h5>Country : {leagueDetails?.strCountry}</h5>
                                                         <h5>Gender : {leagueDetails?.strGender}</h5>
