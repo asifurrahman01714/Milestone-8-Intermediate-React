@@ -10,14 +10,20 @@ function App() {
       <div>
       <input placeholder="Enter Post Title" onChange={event => setQuery(event.target.value)} />
       <h1>Written terms: {query}</h1>
-        {
-          Data.map((post) => (
-            <div className="box" key={post.id}>
-              <p>{post.title}</p>
-              <p>{post.author}</p>
-            </div>
-          ))
-        }
+      {
+        Data.filter(post => {
+          if (query === '') {
+            return post;
+          } else if (post.title.toLowerCase().includes(query.toLowerCase())) {
+            return post;
+          }
+        }).map((post, index) => (
+          <div className="box" key={index}>
+            <p>{post.title}</p>
+            <p>{post.author}</p>
+          </div>
+        ))
+      }
       </div>
     </div>
   );
