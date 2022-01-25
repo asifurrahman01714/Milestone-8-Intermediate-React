@@ -29,12 +29,13 @@ const Home = () => {
                         :
 
                         <div className="row">
+                            // Hence completed the react search bar.
                             {
-                                posts.filter(post=>{
+                                posts.filter((post)=>{
                                     if(search === ""){
-                                        return post
-                                    }else if(post.name.toLowerCase().includes(search.toLowerCase())){
-                                        return post
+                                        return post;
+                                    }else if(post?.title?.toLowerCase().includes(search?.toLowerCase())){
+                                        return post;
                                     }
                                 }).map(post => <Post key={post.id} post={post}/>)
                             }
