@@ -30,7 +30,13 @@ const Home = () => {
 
                         <div className="row">
                             {
-                                posts.map(post => <Post key={post.id} post={post}/>)
+                                posts.filter(post=>{
+                                    if(search === ""){
+                                        return post
+                                    }else if(post.name.toLowerCase().includes(search.toLowerCase())){
+                                        return post
+                                    }
+                                }).map(post => <Post key={post.id} post={post}/>)
                             }
                         </div>
                     }
