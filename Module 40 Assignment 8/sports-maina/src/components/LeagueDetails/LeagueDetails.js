@@ -1,7 +1,9 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import femaleImg from '../../Images/female.png'
-import maleImg from '../../Images/male.png'
+import femaleImg from '../../Images/female.png';
+import maleImg from '../../Images/male.png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 const LeagueDetails = () => {
     const {idLeague} = useParams();
     const [leagues, setLeagues] = React.useState();
@@ -35,10 +37,10 @@ const LeagueDetails = () => {
                                             <div class="row g-0">
                                                 <div class="col-md-8">
                                                     <div class="card-body">
-                                                        <h5 class="card-title">Name: {leagueDetails?.strLeague}</h5>
-                                                        <h5>Founded: {leagueDetails?.intFormedYear}</h5>
-                                                        <h5>Country: {leagueDetails?.strCountry}</h5>
-                                                        <h5>Gender: {leagueDetails?.strGender}</h5>
+                                                        <h5 class="card-title">Name : {leagueDetails?.strLeague}</h5>
+                                                        <h5>Founded : {leagueDetails?.intFormedYear}</h5>
+                                                        <h5>Country : {leagueDetails?.strCountry}</h5>
+                                                        <h5>Gender : {leagueDetails?.strGender}</h5>
                                                     </div>
                                                 </div>
                                                 
