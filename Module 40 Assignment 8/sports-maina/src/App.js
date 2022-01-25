@@ -6,6 +6,7 @@ import {
   Link
 } from "react-router-dom";
 import Home from "./components/Home/Home";
+import LeagueDetails from "./components/LeagueDetails/LeagueDetails";
 
 
 function App() {
@@ -17,6 +18,9 @@ function App() {
         </Route>
         <Route  path="/home">
           <Home/>
+        </Route>
+        <Route path="/leagueDetails/:idLeague">
+          <LeagueDetails/>
         </Route>
       </Switch>
     </Router>
