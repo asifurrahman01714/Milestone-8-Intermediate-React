@@ -4,7 +4,7 @@ import { useContext } from 'react';
 import { SearchContext } from '../../App';
 
 const Header = () => {
-    const [setSearch] = useContext(SearchContext);
+    const [search,setSearch] = useContext(SearchContext);
     return (
         <div>
             <div style={{height: '150px',alignItems: 'center',justifyContent: 'center',display: 'flex'}}>
