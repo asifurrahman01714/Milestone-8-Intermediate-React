@@ -20,3 +20,8 @@ https://www.thesportsdb.com/api/v1/json/2/all_leagues.php
 ```
 https://github.com/asifurrahman01714/Milestone-8-Intermediate-React/tree/main/Module%2040%20Assignment%208/sports-maina
 ```
+
+### Live Server: 
+```
+https://sports-maina-by-asifurrahman.netlify.app/
+```
