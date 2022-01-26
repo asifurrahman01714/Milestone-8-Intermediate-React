@@ -1,11 +1,11 @@
 import React from 'react';
-import { useContext } from 'react/cjs/react.development';
+import { useContext } from 'react';
 import { SearchContext } from '../../App';
 import League from '../League/League';
 
 const Leagues = () => {
     const [leagues, setLeagues] = React.useState([]);
-    const [search] = useContext(SearchContext);
+    const [search, setSearch] = useContext(SearchContext);
     const [spinner ,setSpinner] = React.useState(true);
     React.useEffect(()=>{
         const url =`https://www.thesportsdb.com/api/v1/json/2/search_all_leagues.php?c=England`;
@@ -22,8 +22,8 @@ const Leagues = () => {
             {
                         spinner === true ? 
                         <div className="row justify-content-center mt-5">
-                            <div class="spinner-border text-danger" role="status">
-                                <span class="visually-hidden"></span>
+                            <div className="spinner-border text-danger" role="status">
+                                <span className="visually-hidden"></span>
                             </div>
                         </div>
                         :
